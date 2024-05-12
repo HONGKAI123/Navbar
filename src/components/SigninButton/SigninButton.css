@@ -43,6 +43,6 @@
 }
 .navbar-signin-btn:hover:before {
   font-size: large;
-  background-position: -100em 0;
+  background-position: -90em 0;
   transition: 10s linear;
 }
