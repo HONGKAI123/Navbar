@@ -1,0 +1,59 @@
+.navbar-linkitems {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 60px;
+  position: relative;
+}
+
+.navbar-linkitems .navbar-link {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  /* fontsize: 17px */
+  font-size: 1.0625rem;
+  font-family: "Poppins", sans-serif;
+  transition: color 0.5s ease, background-size 0.5s ease;
+}
+.navbar-linkitems .navbar-link:hover {
+  color: transparent; /* 使文字透明，显示背景渐变 */
+  background-image: linear-gradient(
+    45deg,
+    #ffc876 10%,
+    #79fff7 43%,
+    #9f53ff 72%,
+    #ff98e2 100%
+  );
+  -webkit-background-clip: text; /* cut background to text*/
+}
+/* backup solution if not support webkit */
+@supports not (-webkit-background-clip: text) {
+  .navbar-linkitems a:hover {
+    background: none;
+    color: rgba(255, 255, 255, 0.5); /* if not support, use original text */
+  }
+}
+.navbar-linkitems .navbar-link::after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to right, #89f9e8 10%, #facb7b 100%);
+
+  height: 1.5px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s ease;
+}
+.navbar-linkitems .navbar-link:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 1381px) {
+  .navbar-linkitems .navbar-link {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 1268px) {
+  .navbar-linkitems {
+    display: block;
+  }
+}
