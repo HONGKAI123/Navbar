@@ -46,14 +46,3 @@
 .navbar-linkitems .navbar-link:hover:after {
   width: 100%;
 }
-
-@media (max-width: 1381px) {
-  .navbar-linkitems .navbar-link {
-    font-size: 0.75rem;
-  }
-}
-@media (max-width: 1268px) {
-  .navbar-linkitems {
-    display: block;
-  }
-}
