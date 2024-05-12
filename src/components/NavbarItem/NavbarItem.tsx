@@ -1,4 +1,5 @@
 import React from "react";
+import "./NavbarItem.css";
 interface NavbarItemProps {
   link: string;
   label: string;

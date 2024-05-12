@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Navbar.css";
 import NavbarItem from "../NavbarItem/NavbarItem";
 import SigninButton from "../SigninButton/SigninButton";
 import {
@@ -36,7 +37,7 @@ function Navbar() {
           <NavbarItem label="SIGN UP" link="#" />
           <SigninButton />
         </div>
-        <a
+        {/* <a
           href="#toggle"
           className="navbar-toggle-btn"
           onClick={toggleNavbarHandler}
@@ -44,7 +45,7 @@ function Navbar() {
           <span className="navbar-toggle-btn-bar"></span>
           <span className="navbar-toggle-btn-bar"></span>
           <span className="navbar-toggle-btn-bar"></span>
-        </a>
+        </a> */}
       </nav>
     </div>
   );
