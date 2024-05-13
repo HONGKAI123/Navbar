@@ -5,6 +5,7 @@
 }
 
 .dropdown-menu {
+  z-index: 1000;
   position: relative;
   right: 55%;
   margin-top: 11px;
@@ -52,6 +53,9 @@
   .dropdown-container {
     /* display: none; */
     left: 40%;
+  }
+  .dropdown-menu {
+    background-color: black;
   }
 }
 @media (max-width: 1381px) {

@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# Responsive Navbar Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+The Responsive Navbar Project aims to provide a modern, fully responsive navigation solution suitable for websites across different devices.
 
-In the project directory, you can run:
+## Live Demo
 
-### `npm start`
+### Check out the live demo of the Responsive Navbar here:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This Project is hosted with github page
+Demo url : https://hongkai123.github.io/Navbar/
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Figma Deisgn
 
-### `npm test`
+figma file url: https://www.figma.com/file/8ATp9Zx4rw4wnUhgmCbPnE/Navbar?type=design&node-id=31%3A271&mode=design&t=40o0ABq0P5jdCkM3-1
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Main Features
 
-### `npm run build`
+- Resposive Navbar: Adjusts to screen size changes, ensuring optimal layout and accessibility across devices
+- Rainbow Singin Button: Adds a unique, eye-catching element that stands out on any page
+- Hamburger Menu: Provides a compact, user-friendly navigation option for tablet and mobile device users.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation and Setup
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Before installing the backend, please ensure that your system has Node.js version 18.0 or higher installed. The current recommended version is 18.12.0. This is important to meet the software dependencies and ensure smooth operation of the backend.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Checking Node.js Version
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+You can check your current version of Node.js by running the following command in your terminal:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+node --version
+```
 
-## Learn More
+### Run Application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Navigate to the `navbar` folder:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+cd navbar
+```
+
+2. Install dependencies and start the React app:
+
+```bash
+npm install
+npm start
+```
+
+After running the command, the application should be available at http://localhost:3000. Open this URL in your web browser to view the application.
