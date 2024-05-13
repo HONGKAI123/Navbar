@@ -1,38 +1,72 @@
-/* .App {
+.animatedbigtitle {
+  position: absolute;
   text-align: center;
+  position: relative;
+  display: block;
+  margin-top: 20%;
+  font-size: calc(30px + 6vmin);
+  color: #ffffff;
+  z-index: 50;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.bgdiv {
+  position: fixed;
+  top: 15%;
+  width: 100%;
+  height: 100%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  scroll-behavior: auto;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+@media (any-pointer: fine) {
+  @keyframes animatedBackground {
+    from {
+      top: -100px;
+      opacity: 0.6;
+    }
+    to {
+      top: -65px; /* 避免将 top 设置为负值 */
+      opacity: 0.9;
+    }
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (any-pointer: coarse) {
+  @keyframes animatedBackground {
+    from {
+      left: -20%;
+      width: 130%;
+      filter: alpha(opacity=60);
+      opacity: 0.6;
+    }
+    to {
+      top: 0;
+      left: -20%;
+      width: 160%;
+      filter: alpha(opacity=90);
+      opacity: 0.9;
+    }
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.animatedbgimg {
+  align-items: center;
+  position: absolute;
+  display: block;
+  background-size: contain;
+  filter: alpha(opacity=90);
+  width: 100%;
+  opacity: 0.9;
+  color: #000000;
+  scroll-behavior: smooth;
+  background-repeat: no-repeat;
+  animation: animatedBackground 3s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 1381px) {
+  .bgdiv {
+    display: none;
   }
-} */
+}
