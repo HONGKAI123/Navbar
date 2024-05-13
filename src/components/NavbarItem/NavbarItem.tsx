@@ -21,6 +21,9 @@ function NavbarItem({ link, label, dropDownitems }: NavbarItemProps) {
         className="navbar-linkitems"
         onMouseOver={dropDownHandler}
         onMouseLeave={hideDropDownHandler}
+        role="menuitem"
+        aria-haspopup="true"
+        aria-expanded={showDropDown}
       >
         <a href={link} className="navbar-link">
           {label}

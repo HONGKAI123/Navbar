@@ -21,6 +21,7 @@ figma file url: https://www.figma.com/file/8ATp9Zx4rw4wnUhgmCbPnE/Navbar?type=de
 - Resposive Navbar: Adjusts to screen size changes, ensuring optimal layout and accessibility across devices
 - Rainbow Singin Button: Adds a unique, eye-catching element that stands out on any page
 - Hamburger Menu: Provides a compact, user-friendly navigation option for tablet and mobile device users.
+- Accessibility: Semantic HTML, ARIA labels and roles to ensure usable and accessible to people with disabilities
 
 ## Technologies Used
 

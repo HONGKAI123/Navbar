@@ -15,7 +15,7 @@ function Navbar() {
   };
   //   console.log(isHamNavVisible);
   return (
-    <div className="navbar-container">
+    <div className="navbar-container" aria-label="Main navigation">
       <nav className="navbar">
         <div className="navbar-logo">
           <img src={`${process.env.PUBLIC_URL}/logo.svg`} alt="logo" />
@@ -41,6 +41,9 @@ function Navbar() {
           href="#toggle"
           className="navbar-toggle-btn"
           onClick={toggleNavbarHandler}
+          aria-haspopup="true"
+          aria-controls="navbar-links"
+          aria-expanded={isHamNavVisible}
         >
           <span className="navbar-toggle-btn-bar"></span>
           <span className="navbar-toggle-btn-bar"></span>

@@ -1,8 +1,7 @@
-import React from "react";
 import "./SigninButton.css";
 
 function SigninButton() {
-  return <button className="navbar-signin-btn"></button>;
+  return <button className="navbar-signin-btn" aria-label="Sign In"></button>;
 }
 
 export default SigninButton;
