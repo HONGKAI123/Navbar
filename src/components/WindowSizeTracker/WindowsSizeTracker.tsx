@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function WindowSizeTracker() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => {
