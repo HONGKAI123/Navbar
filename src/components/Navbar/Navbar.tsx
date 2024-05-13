@@ -24,12 +24,12 @@ function Navbar() {
         <div className={`navbar-links ${isHamNavVisible ? "active" : ""}`}>
           <ul>
             <NavbarItem label="HOME" link="#" />
-            <NavbarItem label="ABOUT US" link="#" dropDownItems={aboutData} />
-            <NavbarItem label="PRICING" link="#" dropDownItems={pricingData} />
+            <NavbarItem label="ABOUT US" link="#" dropDownitems={aboutData} />
+            <NavbarItem label="PRICING" link="#" dropDownitems={pricingData} />
             <NavbarItem
               label="PROJECTS"
               link="#"
-              dropDownItems={projectsData}
+              dropDownitems={projectsData}
             />
           </ul>
         </div>
