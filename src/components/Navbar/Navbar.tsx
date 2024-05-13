@@ -18,7 +18,7 @@ function Navbar() {
     <div className="navbar-container">
       <nav className="navbar">
         <div className="navbar-logo">
-          <img src="/logo.svg" alt="logo" />
+          <img src={`${process.env.PUBLIC_URL}/logo.svg`} alt="logo" />
           <h1>Logo</h1>
         </div>
         <div className={`navbar-links ${isHamNavVisible ? "active" : ""}`}>
