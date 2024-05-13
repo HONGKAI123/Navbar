@@ -17,13 +17,12 @@ function NavbarItem({ link, label, dropDownitems }: NavbarItemProps) {
   };
   return (
     <>
-      <li className="navbar-linkitems">
-        <a
-          href={link}
-          className="navbar-link"
-          onMouseOver={dropDownHandler}
-          onMouseLeave={hideDropDownHandler}
-        >
+      <li
+        className="navbar-linkitems"
+        onMouseOver={dropDownHandler}
+        onMouseLeave={hideDropDownHandler}
+      >
+        <a href={link} className="navbar-link">
           {label}
         </a>
         <DropdownMenu

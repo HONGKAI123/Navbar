@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  font-size: 2vw;
+  font-size: min(2vw, 16px);
 }
 
 code {

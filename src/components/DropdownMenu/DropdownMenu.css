@@ -50,6 +50,13 @@
 }
 @media (max-width: 1268px) {
   .dropdown-container {
-    display: none;
+    /* display: none; */
+    left: 40%;
+  }
+}
+@media (max-width: 1381px) {
+  .dropdown-container {
+    /* display: none; */
+    transform: translateX(50%);
   }
 }
